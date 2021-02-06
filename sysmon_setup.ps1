@@ -7,7 +7,7 @@
 $url1 = "https://download.sysinternals.com/files/Sysmon.zip"
 $file1 = "C:\Sysmon.zip"
 
-$url2 = "https://raw.githubusercontent.com/Starke427/Sysmon-Configs/master/sysmon_config.xml"
+$url2 = "https://raw.githubusercontent.com/Starke427/Sysmon/master/sysmon_config.xml"
 $file2 = "C:\sysmon_config.xml"
 
 (New-Object -TypeName System.Net.WebClient).DownloadFile($url1, $file1)
