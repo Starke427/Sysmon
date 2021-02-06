@@ -1,12 +1,12 @@
-# Sysmon-Configs
+# Sysmon
 Variety of sysmon configurations for file integrity, registry, and dns monitoring.
 
 ## Automated Sysmon Installation
 
-[sysmon_setup.ps1](https://raw.githubusercontent.com/Starke427/Sysmon-Configs/master/sysmon_setup.ps1) will download Sysmon from sysinternals.com along with the default configuration file from this github. It must be run from an Administrative PowerShell.
+[sysmon_setup.ps1](https://raw.githubusercontent.com/Starke427/Sysmon/master/sysmon_setup.ps1) will download Sysmon from sysinternals.com along with the default configuration file from this github. It must be run from an Administrative PowerShell.
 
 ```
-$url1 = "https://raw.githubusercontent.com/Starke427/Sysmon-Configs/master/sysmon_setup.ps1"
+$url1 = "https://raw.githubusercontent.com/Starke427/Sysmon/master/sysmon_setup.ps1"
 $file1 = "$env:temp\sysmon_setup.ps1"
 (New-Object -TypeName System.Net.WebClient).DownloadFile($url1, $file1)
 Set-ExecutionPolicy -ExecutionPolicy Bypass -force
